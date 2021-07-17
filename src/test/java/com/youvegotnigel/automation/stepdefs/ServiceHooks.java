@@ -16,7 +16,6 @@ public class ServiceHooks {
     TestBase testBase;
     public static final Logger log = LogManager.getLogger(ServiceHooks.class.getName());
 
-
     @Before
     public void beforeStartScenario(Scenario scenario){
         log.debug("✰ Started scenario : " + scenario.getName());

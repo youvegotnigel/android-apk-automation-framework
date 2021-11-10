@@ -27,7 +27,7 @@ public class TestBase extends AbstractTestNGCucumberTests {
         caps.setCapability("noReset", true);
         caps.setCapability("fullReset", false);
 
-        driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), caps);
+        driver = new AndroidDriver(new URL("http://localhost:4723/"), caps);
         LogEntries logEntries = driver.manage().logs().get("logcat");
         logEntries.getAll();
 
